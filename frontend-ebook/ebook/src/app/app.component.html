@@ -1,0 +1,21 @@
+<header class="navbar navbar-expand flex-column flex-md-row bd-navbar">
+  <div class="container">
+    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+      <img class="logo" src="../assets/images/icono_salud_cocina.png" alt="Logo CNE" height="80" />
+    </a>
+
+    <h1 class="main_title">Nutriendo tu cocina
+    </h1>
+    <h3><span>Consejos nutricionales y recetas de cocina</span></h3>
+
+    <a class="nav-item nav-link" *ngIf="nombreUsuario">{{nombreUsuario}}</a>
+    <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" (click)="cerrarSesion()" *ngIf="nombreUsuario">Cerrar
+      Sesión</a>
+
+
+  </div>
+  </header>
+  <div class="pull-right">
+    <p-megaMenu [model]="items" >
+    </p-megaMenu>
+  </div>
