@@ -7,10 +7,12 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {MenuModule} from 'primeng/menu';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MegaMenuModule} from 'primeng/megamenu';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     MenuModule,
