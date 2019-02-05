@@ -7,12 +7,30 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {MenuModule} from 'primeng/menu';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MegaMenuModule} from 'primeng/megamenu';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { TemplateComponent } from './layout/template/template.component';
+import { ContentComponent } from './components/content/content.component';
+import { NgbModule, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { MuestraImagenesComponent } from './components/muestra-imagenes/muestra-imagenes.component';
+import { LeadComponent } from './components/lead/lead.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { RecetasComponent } from './components/recetas/recetas.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    TemplateComponent,
+    ContentComponent,
+    MuestraImagenesComponent,
+    LeadComponent,
+    ContactoComponent,
+    NosotrosComponent,
+    RecetasComponent,
+    InicioComponent
   ],
   imports: [
     MenuModule,
@@ -20,9 +38,11 @@ import { HeaderComponent } from './components/header/header.component';
     BsDropdownModule.forRoot(), 
     AngularFontAwesomeModule,
     BrowserAnimationsModule,
-    MegaMenuModule
+    MegaMenuModule,
+    NgbModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [ NgbCarouselConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,11 +10,9 @@ import {MenuItem} from 'primeng/api';
 export class AppComponent {
   title = 'ebook';
 
-  navbarOpen = false;
-
-  toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
-  }
+    constructor(){
+        console.log("Inicando aplicación..");
+    }
 
 
   ngOnInit() {
