@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {MenuModule} from 'primeng/menu';
@@ -18,6 +18,12 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { RecetasComponent } from './components/recetas/recetas.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { CategoriaComponent } from './components/categorias/categoria.component';
+import { RecetaComponent } from './components/receta/receta.component';
+import {PanelModule} from 'primeng/panel';
+import {CardModule} from 'primeng/card';
+import {AccordionModule} from 'primeng/accordion';
+import {ListboxModule} from 'primeng/listbox';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,9 @@ import { InicioComponent } from './components/inicio/inicio.component';
     ContactoComponent,
     NosotrosComponent,
     RecetasComponent,
-    InicioComponent
+    InicioComponent,
+    CategoriaComponent,
+    RecetaComponent
   ],
   imports: [
     MenuModule,
@@ -40,7 +48,12 @@ import { InicioComponent } from './components/inicio/inicio.component';
     BrowserAnimationsModule,
     MegaMenuModule,
     NgbModule,
-    AppRoutingModule
+    PanelModule,
+    CardModule,
+    ListboxModule,
+    AccordionModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ NgbCarouselConfig],
   bootstrap: [AppComponent]

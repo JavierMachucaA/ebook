@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecetasComponent implements OnInit {
 
+  public categorias : any[] = [
+    {title:'Comidas'},
+    {title:'Postres'},
+    {title:'Pastelería'},
+  ];
+
   constructor() { }
 
   ngOnInit() {
